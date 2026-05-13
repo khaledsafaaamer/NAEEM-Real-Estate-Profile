@@ -1,0 +1,2112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NAEEM Real Estate Holding — Company Profile</title>
+<meta name="description" content="NAEEM Real Estate Holding Group — Listed Egyptian real estate investment company with developments across Egypt and the UAE.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* ============== RESET & BASE ============== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+:root {
+    --bg-0: #0a0a0b;
+    --bg-1: #111114;
+    --bg-2: #16161a;
+    --bg-3: #1d1d23;
+    --bg-card: #14141a;
+    --line: rgba(255, 255, 255, 0.06);
+    --line-2: rgba(255, 255, 255, 0.1);
+    --text-0: #f7f7f5;
+    --text-1: #c8c8c4;
+    --text-2: #8a8a86;
+    --text-3: #56565a;
+    --accent: #ec6b2d;
+    --accent-2: #ff8a4c;
+    --accent-soft: rgba(236, 107, 45, 0.12);
+    --accent-line: rgba(236, 107, 45, 0.25);
+    --gold: #d4a574;
+    --serif: 'Fraunces', 'Times New Roman', serif;
+    --sans: 'Inter', -apple-system, sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+    --radius-sm: 6px;
+    --radius: 12px;
+    --radius-lg: 20px;
+    --max-w: 1280px;
+}
+
+body {
+    font-family: var(--sans);
+    background: var(--bg-0);
+    color: var(--text-1);
+    line-height: 1.6;
+    font-size: 16px;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle grain overlay */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0.4;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+/* ============== TYPOGRAPHY ============== */
+.serif { font-family: var(--serif); font-optical-sizing: auto; }
+.mono  { font-family: var(--mono); }
+.eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+.eyebrow::before {
+    content: '';
+    width: 24px; height: 1px;
+    background: var(--accent);
+    display: inline-block;
+}
+
+h1, h2, h3, h4 { font-family: var(--serif); color: var(--text-0); line-height: 1.1; font-weight: 500; letter-spacing: -0.02em; }
+h1 { font-size: clamp(2.5rem, 7vw, 5.5rem); }
+h2 { font-size: clamp(2rem, 4.5vw, 3.5rem); font-weight: 400; }
+h3 { font-size: clamp(1.3rem, 2.2vw, 1.75rem); font-weight: 500; }
+h4 { font-size: 1.1rem; font-weight: 600; }
+em { font-style: italic; color: var(--accent-2); font-family: var(--serif); }
+
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 32px; }
+
+/* ============== NAV ============== */
+.nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 50;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    background: rgba(10, 10, 11, 0.7);
+    border-bottom: 1px solid var(--line);
+    transition: all 0.3s ease;
+}
+.nav-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 18px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--text-0);
+}
+.brand-mark {
+    width: 32px; height: 32px;
+    position: relative;
+    background: var(--bg-3);
+    border-radius: 6px;
+    display: grid;
+    place-items: center;
+}
+.brand-mark::before {
+    content: '';
+    width: 14px; height: 14px;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent) 50%, transparent 50%, transparent 100%);
+    transform: rotate(45deg);
+}
+.brand small { font-family: var(--mono); font-size: 9px; color: var(--text-3); letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-top: -2px; }
+
+.nav-links { display: flex; gap: 4px; align-items: center; }
+.nav-links a {
+    font-size: 13px;
+    color: var(--text-2);
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    font-weight: 400;
+}
+.nav-links a:hover { color: var(--text-0); background: var(--bg-2); }
+
+.nav-cta {
+    background: var(--accent);
+    color: #fff !important;
+    padding: 10px 18px !important;
+    border-radius: 6px;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+}
+.nav-cta:hover { background: var(--accent-2) !important; }
+
+.menu-toggle { display: none; background: none; border: none; color: var(--text-0); cursor: pointer; font-size: 24px; }
+
+@media (max-width: 900px) {
+    .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; background: var(--bg-1); padding: 20px; border-bottom: 1px solid var(--line); }
+    .nav-links.open { display: flex; }
+    .nav-links a { width: 100%; padding: 12px 16px; }
+    .menu-toggle { display: block; }
+}
+
+/* ============== HERO ============== */
+.hero {
+    min-height: 100vh;
+    padding: 140px 0 80px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+.hero-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        radial-gradient(ellipse 60% 80% at 80% 20%, rgba(236, 107, 45, 0.18), transparent 50%),
+        radial-gradient(ellipse 70% 50% at 20% 80%, rgba(212, 165, 116, 0.08), transparent 50%);
+}
+.hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(to right, var(--line) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--line) 1px, transparent 1px);
+    background-size: 80px 80px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+}
+
+.hero-inner {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.hero-top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+.confidential-stamp {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    border: 1px solid var(--accent-line);
+    border-radius: 100px;
+    background: var(--accent-soft);
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+.confidential-stamp .dot {
+    width: 6px; height: 6px; border-radius: 50%; background: var(--accent);
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(1.4); }
+}
+.date-stamp { font-family: var(--mono); font-size: 11px; color: var(--text-3); letter-spacing: 0.1em; text-transform: uppercase; }
+
+h1.hero-title {
+    margin-bottom: 24px;
+    max-width: 1100px;
+}
+.hero-title .line { display: block; opacity: 0; transform: translateY(30px); animation: rise 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+.hero-title .line:nth-child(1) { animation-delay: 0.1s; }
+.hero-title .line:nth-child(2) { animation-delay: 0.25s; }
+.hero-title .line:nth-child(3) { animation-delay: 0.4s; }
+@keyframes rise { to { opacity: 1; transform: translateY(0); } }
+
+.hero-sub {
+    max-width: 640px;
+    font-size: clamp(1rem, 1.4vw, 1.15rem);
+    color: var(--text-2);
+    margin-bottom: 56px;
+    opacity: 0;
+    animation: rise 0.9s 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+/* Floating badges */
+.floating-badges {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+    max-width: 900px;
+}
+.fb {
+    padding: 20px 22px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+    border: 1px solid var(--line-2);
+    border-radius: var(--radius);
+    backdrop-filter: blur(8px);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: rise 0.7s forwards;
+    position: relative;
+    overflow: hidden;
+}
+.fb:nth-child(1) { animation-delay: 0.7s; }
+.fb:nth-child(2) { animation-delay: 0.8s; }
+.fb:nth-child(3) { animation-delay: 0.9s; }
+.fb:nth-child(4) { animation-delay: 1.0s; }
+.fb:nth-child(5) { animation-delay: 1.1s; }
+.fb::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 30px; height: 1px;
+    background: var(--accent);
+}
+.fb-value {
+    font-family: var(--serif);
+    font-size: 2.2rem;
+    color: var(--text-0);
+    line-height: 1;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+.fb-value span { color: var(--accent); font-size: 1.4rem; }
+.fb-label { font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-3); }
+
+.scroll-cue {
+    position: absolute;
+    bottom: 32px; left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--text-3);
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    z-index: 2;
+}
+.scroll-cue::after {
+    content: '';
+    width: 1px; height: 40px;
+    background: linear-gradient(to bottom, var(--text-3), transparent);
+    animation: scrollPulse 2s infinite;
+}
+@keyframes scrollPulse {
+    0%, 100% { opacity: 0.3; transform: scaleY(0.6); transform-origin: top; }
+    50% { opacity: 1; transform: scaleY(1); transform-origin: top; }
+}
+
+/* ============== SECTIONS ============== */
+section { padding: 120px 0; position: relative; }
+.section-head {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+    margin-bottom: 80px;
+    align-items: end;
+}
+.section-head .lead p {
+    font-size: 1.05rem;
+    color: var(--text-2);
+    max-width: 600px;
+}
+@media (max-width: 760px) {
+    .section-head { grid-template-columns: 1fr; gap: 24px; }
+    section { padding: 80px 0; }
+}
+
+/* ============== ABOUT / OVERVIEW ============== */
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 32px;
+}
+@media (max-width: 900px) { .overview-grid { grid-template-columns: 1fr; } }
+
+.about-card {
+    background: var(--bg-1);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.about-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--accent), transparent);
+    opacity: 0.5;
+}
+.about-card h3 { margin-bottom: 20px; }
+.about-card p { color: var(--text-1); margin-bottom: 16px; }
+.about-card p:last-child { margin-bottom: 0; }
+
+.markets-card {
+    background: var(--bg-1);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+}
+.market {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--line);
+}
+.market:last-child { border-bottom: none; padding-bottom: 0; }
+.market:first-child { padding-top: 0; }
+.market-flag {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 12px;
+}
+.market h4 { margin-bottom: 12px; font-family: var(--serif); font-weight: 500; }
+.market ul { list-style: none; }
+.market ul li {
+    padding: 6px 0;
+    color: var(--text-2);
+    font-size: 14px;
+    padding-left: 18px;
+    position: relative;
+}
+.market ul li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 14px;
+    width: 8px; height: 1px;
+    background: var(--accent);
+}
+
+/* ============== KPI CARDS ============== */
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.kpi {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 32px 28px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+    cursor: default;
+}
+.kpi::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 100% 0%, var(--accent-soft), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.kpi:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-line);
+    box-shadow: 0 20px 40px -20px rgba(236, 107, 45, 0.2);
+}
+.kpi:hover::before { opacity: 1; }
+.kpi-icon {
+    width: 44px; height: 44px;
+    border-radius: 8px;
+    background: var(--bg-3);
+    display: grid;
+    place-items: center;
+    margin-bottom: 24px;
+    color: var(--accent);
+    position: relative;
+    z-index: 1;
+}
+.kpi-icon svg { width: 22px; height: 22px; stroke-width: 1.5; }
+.kpi-value {
+    font-family: var(--serif);
+    font-size: 2.6rem;
+    color: var(--text-0);
+    line-height: 1;
+    margin-bottom: 6px;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+.kpi-value sup { font-size: 1.1rem; color: var(--accent); top: -1em; }
+.kpi-label {
+    color: var(--text-2);
+    font-size: 13px;
+    position: relative;
+    z-index: 1;
+}
+
+/* ============== PROJECTS ============== */
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+    margin-bottom: 100px;
+    padding-top: 40px;
+    border-top: 1px solid var(--line);
+}
+.project:nth-child(even) .project-visual { order: 2; }
+.project-text { padding: 0 8px; }
+.project-region {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+}
+.project h3 { font-size: 2rem; margin-bottom: 16px; }
+.project-desc { color: var(--text-2); margin-bottom: 28px; max-width: 500px; }
+.project-specs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 28px;
+}
+.spec {
+    border-left: 2px solid var(--accent);
+    padding-left: 14px;
+}
+.spec-num {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    color: var(--text-0);
+    line-height: 1;
+    margin-bottom: 4px;
+}
+.spec-label { font-size: 12px; color: var(--text-2); text-transform: uppercase; letter-spacing: 0.08em; }
+
+.project-visual {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    border: 1px solid var(--line);
+}
+.project-visual img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease, filter 0.6s ease;
+    filter: brightness(0.85) contrast(1.05);
+}
+.project-visual:hover img { transform: scale(1.04); filter: brightness(0.95) contrast(1.1); }
+.project-tag {
+    position: absolute;
+    top: 16px; left: 16px;
+    background: rgba(10, 10, 11, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 6px 12px;
+    border-radius: 100px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-0);
+    border: 1px solid var(--line-2);
+}
+
+@media (max-width: 900px) {
+    .project { grid-template-columns: 1fr; gap: 24px; }
+    .project:nth-child(even) .project-visual { order: 0; }
+}
+
+/* ============== PILLARS / Why ============== */
+.pillars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+.pillar {
+    padding: 36px 28px;
+    background: var(--bg-1);
+    transition: background 0.3s ease;
+    position: relative;
+}
+.pillar:hover { background: var(--bg-2); }
+.pillar-num {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--accent);
+    letter-spacing: 0.2em;
+    margin-bottom: 24px;
+}
+.pillar h4 { margin-bottom: 12px; font-family: var(--serif); font-weight: 500; font-size: 1.4rem; }
+.pillar p { color: var(--text-2); font-size: 14px; }
+
+/* ============== BAR CHART ============== */
+.bar-chart-card {
+    background: var(--bg-1);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 48px 40px;
+}
+.bar-chart-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 36px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.bar-chart-title h3 { margin-bottom: 4px; }
+.bar-chart-title p { font-size: 13px; color: var(--text-3); }
+
+.bar-row { margin-bottom: 24px; }
+.bar-row:last-child { margin-bottom: 0; }
+.bar-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+    gap: 16px;
+}
+.bar-label .name { font-size: 14px; color: var(--text-1); }
+.bar-label .value {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    color: var(--text-0);
+}
+.bar-label .value span { font-family: var(--mono); font-size: 11px; color: var(--text-3); margin-left: 6px; }
+.bar-track {
+    height: 8px;
+    background: var(--bg-3);
+    border-radius: 100px;
+    overflow: hidden;
+    position: relative;
+}
+.bar-fill {
+    height: 100%;
+    background: linear-gradient(to right, var(--accent), var(--accent-2));
+    border-radius: 100px;
+    width: 0;
+    transition: width 1.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    position: relative;
+}
+.bar-fill::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transform: translateX(-100%);
+    animation: shimmer 2.5s infinite;
+}
+@keyframes shimmer {
+    100% { transform: translateX(100%); }
+}
+
+/* ============== GALLERY ============== */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
+}
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius);
+    cursor: pointer;
+    aspect-ratio: 1;
+    border: 1px solid var(--line);
+}
+.gallery-item.large { grid-column: span 6; grid-row: span 2; aspect-ratio: auto; }
+.gallery-item.wide { grid-column: span 6; }
+.gallery-item.small { grid-column: span 3; }
+.gallery-item.medium { grid-column: span 4; }
+.gallery-item img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease, filter 0.5s ease;
+    filter: grayscale(0.2) brightness(0.85);
+}
+.gallery-item:hover img {
+    transform: scale(1.05);
+    filter: grayscale(0) brightness(1);
+}
+.gallery-caption {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 24px 20px 18px;
+    background: linear-gradient(to top, rgba(10, 10, 11, 0.95), transparent);
+    transform: translateY(8px);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.gallery-item:hover .gallery-caption {
+    transform: translateY(0);
+    opacity: 1;
+}
+.gallery-caption h5 {
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    color: var(--text-0);
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+.gallery-caption .meta {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+@media (max-width: 760px) {
+    .gallery { grid-template-columns: repeat(2, 1fr); }
+    .gallery-item, .gallery-item.large, .gallery-item.wide, .gallery-item.small, .gallery-item.medium {
+        grid-column: span 1;
+        grid-row: span 1;
+        aspect-ratio: 1;
+    }
+}
+
+/* ============== TIMELINE ============== */
+.timeline {
+    position: relative;
+    padding-left: 8px;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px; top: 8px; bottom: 8px;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, var(--line-2) 10%, var(--line-2) 90%, transparent);
+}
+.tl-item {
+    position: relative;
+    padding-left: 56px;
+    padding-bottom: 48px;
+}
+.tl-item:last-child { padding-bottom: 0; }
+.tl-item::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 6px;
+    width: 17px; height: 17px;
+    border-radius: 50%;
+    background: var(--bg-0);
+    border: 2px solid var(--accent);
+}
+.tl-item::after {
+    content: '';
+    position: absolute;
+    left: 5px; top: 11px;
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+.tl-year {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+.tl-item h4 {
+    font-family: var(--serif);
+    color: var(--text-0);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.tl-item p { color: var(--text-2); font-size: 14px; max-width: 700px; }
+
+/* ============== COMPARISON TABLE ============== */
+.compare {
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--bg-1);
+}
+.compare table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+.compare thead th {
+    text-align: left;
+    padding: 18px 24px;
+    font-family: var(--mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--text-3);
+    background: var(--bg-2);
+    border-bottom: 1px solid var(--line);
+    font-weight: 500;
+}
+.compare tbody td {
+    padding: 18px 24px;
+    border-bottom: 1px solid var(--line);
+    color: var(--text-1);
+    font-size: 14px;
+}
+.compare tbody tr:last-child td { border-bottom: none; }
+.compare tbody tr { transition: background 0.2s ease; }
+.compare tbody tr:hover { background: var(--bg-2); }
+.compare td.name { color: var(--text-0); font-family: var(--serif); font-weight: 500; font-size: 16px; }
+.compare td.num {
+    font-family: var(--mono);
+    color: var(--accent);
+    font-size: 14px;
+}
+
+/* ============== COLLAPSIBLES ============== */
+.accord {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    margin-bottom: 12px;
+    overflow: hidden;
+    background: var(--bg-1);
+    transition: border-color 0.3s ease;
+}
+.accord.open { border-color: var(--accent-line); }
+.accord-head {
+    padding: 22px 28px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    user-select: none;
+    transition: background 0.2s ease;
+}
+.accord-head:hover { background: var(--bg-2); }
+.accord-head h4 {
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    color: var(--text-0);
+    font-weight: 500;
+}
+.accord-head .num {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.2em;
+}
+.accord-toggle {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: var(--bg-3);
+    display: grid;
+    place-items: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+.accord.open .accord-toggle { background: var(--accent); transform: rotate(45deg); }
+.accord-toggle::before, .accord-toggle::after {
+    content: '';
+    position: absolute;
+    background: var(--text-1);
+}
+.accord-toggle::before { width: 10px; height: 1px; }
+.accord-toggle::after { width: 1px; height: 10px; }
+.accord.open .accord-toggle::before, .accord.open .accord-toggle::after { background: #fff; }
+.accord-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.accord.open .accord-body { max-height: 800px; }
+.accord-body-inner {
+    padding: 0 28px 28px;
+    color: var(--text-2);
+    font-size: 14px;
+    line-height: 1.7;
+}
+.accord-body-inner p { margin-bottom: 12px; }
+.accord-body-inner ul { list-style: none; margin-top: 12px; }
+.accord-body-inner ul li {
+    padding: 6px 0 6px 18px;
+    position: relative;
+    color: var(--text-1);
+}
+.accord-body-inner ul li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 14px;
+    width: 8px; height: 1px;
+    background: var(--accent);
+}
+
+/* ============== TENANTS ============== */
+.tenants {
+    background: var(--bg-1);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 48px 40px;
+}
+.tenants-head { margin-bottom: 36px; }
+.tenants-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+}
+.tenant {
+    padding: 18px 16px;
+    text-align: center;
+    background: var(--bg-2);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 13px;
+    color: var(--text-1);
+}
+.tenant:hover { background: var(--bg-3); border-color: var(--accent-line); transform: translateY(-2px); color: var(--text-0); }
+.tenant .industry { display: block; font-family: var(--mono); font-size: 9px; color: var(--text-3); letter-spacing: 0.1em; margin-top: 4px; text-transform: uppercase; }
+
+/* ============== V5 / FEATURE PROJECT ============== */
+.v5-section {
+    background: linear-gradient(180deg, var(--bg-0) 0%, var(--bg-1) 100%);
+    padding: 140px 0;
+    position: relative;
+    overflow: hidden;
+}
+.v5-section::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, var(--accent-soft), transparent 60%);
+    pointer-events: none;
+}
+.v5-card {
+    background: var(--bg-1);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    position: relative;
+}
+.v5-hero-img {
+    aspect-ratio: 21/9;
+    overflow: hidden;
+    position: relative;
+}
+.v5-hero-img img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7) saturate(0.8);
+}
+.v5-hero-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 40%, var(--bg-1));
+}
+.v5-content {
+    padding: 48px;
+    position: relative;
+}
+.v5-tagline {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.6rem;
+    color: var(--accent);
+    margin-bottom: 16px;
+    max-width: 600px;
+    line-height: 1.3;
+}
+.v5-content h3 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.v5-content > p {
+    color: var(--text-2);
+    max-width: 700px;
+    margin-bottom: 36px;
+    font-size: 1.05rem;
+}
+.v5-amenities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+    margin-top: 36px;
+}
+.amenity {
+    padding: 16px;
+    background: var(--bg-2);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+}
+.amenity:hover { background: var(--bg-3); border-color: var(--accent-line); }
+.amenity-icon {
+    width: 32px; height: 32px;
+    background: var(--accent-soft);
+    border-radius: 6px;
+    display: grid;
+    place-items: center;
+    color: var(--accent);
+    flex-shrink: 0;
+}
+.amenity-icon svg { width: 16px; height: 16px; stroke-width: 1.8; }
+.amenity-text { font-size: 13px; color: var(--text-1); }
+
+@media (max-width: 760px) {
+    .v5-content { padding: 32px 24px; }
+}
+
+/* ============== OUTLOOK ============== */
+.outlook-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.outlook-card {
+    padding: 36px 32px;
+    background: var(--bg-1);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.outlook-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 2px;
+    background: linear-gradient(to right, var(--accent), transparent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+.outlook-card:hover::before { transform: scaleX(1); }
+.outlook-card:hover { border-color: var(--accent-line); }
+.outlook-num {
+    font-family: var(--serif);
+    font-size: 3.2rem;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+.outlook-card h4 {
+    font-family: var(--serif);
+    color: var(--text-0);
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.outlook-card p {
+    color: var(--text-2);
+    font-size: 14px;
+}
+
+/* ============== FOOTER ============== */
+footer {
+    background: var(--bg-0);
+    border-top: 1px solid var(--line);
+    padding: 80px 0 40px;
+    margin-top: 80px;
+    position: relative;
+}
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 200px; height: 1px;
+    background: linear-gradient(to right, transparent, var(--accent), transparent);
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 60px;
+}
+.footer-brand h3 {
+    font-family: var(--serif);
+    color: var(--text-0);
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+}
+.footer-brand p { color: var(--text-2); font-size: 14px; max-width: 360px; }
+.footer-col h5 {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+.footer-col ul { list-style: none; }
+.footer-col ul li { padding: 6px 0; font-size: 13px; color: var(--text-2); }
+.footer-col ul li a { transition: color 0.2s ease; }
+.footer-col ul li a:hover { color: var(--text-0); }
+
+.footer-bottom {
+    border-top: 1px solid var(--line);
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.footer-bottom p {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-3);
+    letter-spacing: 0.05em;
+}
+.footer-bottom .disclaimer {
+    max-width: 600px;
+    line-height: 1.6;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+@media (max-width: 760px) {
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+    .footer-brand { grid-column: 1 / -1; }
+}
+
+/* ============== REVEAL ANIMATION ============== */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Selection */
+::selection { background: var(--accent); color: #fff; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--bg-0); }
+::-webkit-scrollbar-thumb { background: var(--bg-3); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+</style>
+</head>
+<body>
+
+<!-- ============== NAVIGATION ============== -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="#top" class="brand">
+            <div class="brand-mark"></div>
+            <div>
+                NAEEM
+                <small>Real Estate Holding</small>
+            </div>
+        </a>
+        <div class="nav-links" id="navLinks">
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#egypt">Egypt</a>
+            <a href="#uae">UAE</a>
+            <a href="#v5">V5 Hub</a>
+            <a href="#timeline">Timeline</a>
+            <a href="#outlook">Outlook</a>
+            <a href="#contact" class="nav-cta">Investor Deck</a>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+    </div>
+</nav>
+
+<!-- ============== HERO ============== -->
+<section class="hero" id="top">
+    <div class="hero-bg">
+        <div class="hero-grid"></div>
+    </div>
+    <div class="container hero-inner">
+        <div class="hero-top">
+            <span class="confidential-stamp">
+                <span class="dot"></span>
+                Confidential · Company Profile
+            </span>
+            <span class="date-stamp">Issued May 2026 · EGX-Listed</span>
+        </div>
+
+        <h1 class="hero-title serif">
+            <span class="line">Building the next chapter of</span>
+            <span class="line"><em>Egyptian and Gulf</em> real estate</span>
+            <span class="line">with a 16-year track record.</span>
+        </h1>
+
+        <p class="hero-sub">
+            NAEEM Real Estate Holding Group develops, leases and operates landmark residential, commercial and mixed-use assets across Egypt and the United Arab Emirates &mdash; with a flagship portfolio anchored in Smart Village Cairo and Dubai's Jumeirah Village and Sheikh Zayed Road corridors.
+        </p>
+
+        <div class="floating-badges">
+            <div class="fb">
+                <div class="fb-value">16<span>yrs</span></div>
+                <div class="fb-label">In Commercial RE</div>
+            </div>
+            <div class="fb">
+                <div class="fb-value">68<span>%</span></div>
+                <div class="fb-label">Owned Development Arm</div>
+            </div>
+            <div class="fb">
+                <div class="fb-value">120<span>K</span></div>
+                <div class="fb-label">sqm Office BUA</div>
+            </div>
+            <div class="fb">
+                <div class="fb-value">1,266</div>
+                <div class="fb-label">Residential Units Built</div>
+            </div>
+            <div class="fb">
+                <div class="fb-value">2<span> countries</span></div>
+                <div class="fb-label">Egypt · UAE</div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-cue">Scroll</div>
+</section>
+
+<!-- ============== ABOUT / OVERVIEW ============== -->
+<section id="about">
+    <div class="container">
+        <div class="section-head reveal">
+            <div>
+                <span class="eyebrow">01 / About</span>
+                <h2 class="serif" style="margin-top:16px;">A regional developer with a <em>solid</em> track record.</h2>
+            </div>
+            <div class="lead">
+                <p>Listed on the Egyptian Stock Exchange, NAEEM Real Estate Holding Group is positioned as one of the leading vehicles for institutional real estate investment in Egypt and the wider region. The Group's footprint spans premium residential compounds in New Cairo, the largest single-developer presence inside Smart Village &mdash; Egypt's largest gated business community &mdash; and signature UAE assets in Jumeirah Village and on Sheikh Zayed Road in Dubai.</p>
+            </div>
+        </div>
+
+        <div class="overview-grid">
+            <div class="about-card reveal">
+                <h3 class="serif">Our positioning</h3>
+                <p>NAEEM Real Estate Holding (NARE) executes its developments through <strong style="color:var(--text-0);">NAEEM Development</strong>, its 68%-owned real estate development subsidiary established in 2007. The platform has built deep expertise across three product categories: prime residential in East Cairo, Grade-A commercial in Smart Village, and large-format mixed-use developments in the UAE.</p>
+                <p>The Group is recognized as the <em>first mover</em> to introduce the modern "business park" concept inside Smart Village Cairo, and has built a reputation around timely delivery, institutional tenant quality, and consistently strong returns on invested capital.</p>
+                <p>This profile reflects a portfolio matured over more than a decade and a half &mdash; combining the stability of operating income-producing assets with the upside of an active development pipeline.</p>
+            </div>
+
+            <div class="markets-card reveal">
+                <div class="market">
+                    <span class="market-flag">🇪🇬 Egypt &middot; Core Market</span>
+                    <h4 class="serif">East &amp; West Cairo</h4>
+                    <ul>
+                        <li>2 residential projects — 337 total units</li>
+                        <li>8 operating admin buildings in West Cairo</li>
+                        <li>5 buildings currently under development</li>
+                        <li>~120K sqm office BUA across the portfolio</li>
+                        <li>Largest single developer in Smart Village</li>
+                    </ul>
+                </div>
+                <div class="market">
+                    <span class="market-flag">🇦🇪 UAE &middot; Strategic Market</span>
+                    <h4 class="serif">Dubai &mdash; Jumeirah &amp; Sheikh Zayed Rd.</h4>
+                    <ul>
+                        <li>Seasons Community — 760 residential units</li>
+                        <li>The Onyx — 169 apartments, 210 keys, 297 offices</li>
+                        <li>Mixed-use exposure alongside Emaar Business Park</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============== PORTFOLIO KPIs ============== -->
+<section id="portfolio" style="padding-top: 40px;">
+    <div class="container">
+        <div class="section-head reveal">
+            <div>
+                <span class="eyebrow">02 / Portfolio at a glance</span>
+                <h2 class="serif" style="margin-top:16px;">The numbers behind the platform.</h2>
+            </div>
+            <div class="lead">
+                <p>A diversified asset base spanning roughly 170,500 sqm of completed residential land in Cairo, an institutional commercial portfolio inside Smart Village, and two flagship UAE developments. Below are the headline metrics from the Group's combined Egyptian and UAE track record.</p>
+            </div>
+        </div>
+
+        <div class="kpi-grid">
+            <div class="kpi reveal">
+                <div class="kpi-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21V12h6v9"/></svg>
+                </div>
+                <div class="kpi-value">1,266</div>
+                <div class="kpi-label">Residential units delivered (EG + UAE)</div>
+            </div>
+            <div class="kpi reveal">
+                <div class="kpi-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="2" width="16" height="20"/><path d="M9 7h6M9 11h6M9 15h6"/></svg>
+                </div>
+                <div class="kpi-value">13</div>
+                <div class="kpi-label">Admin buildings (8 operating + 5 in development)</div>
+            </div>
+            <div class="kpi reveal">
+                <div class="kpi-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+                </div>
+                <div class="kpi-value">2.5<sup>M</sup></div>
+                <div class="kpi-label">sqm Smart Village footprint (entire campus)</div>
+            </div>
+            <div class="kpi reveal">
+                <div class="kpi-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                </div>
+                <div class="kpi-value">170.5<sup>K</sup></div>
+                <div class="kpi-label">sqm residential land area in New Cairo</div>
+            </div>
+            <div class="kpi reveal">
+                <div class="kpi-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-4H10v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                </div>
+                <div class="kpi-value">210</div>
+                <div class="kpi-label">Hotel keys at The Onyx, Dubai</div>
+            </div>
+            <div class="kpi reveal">
+                <div class="kpi-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                </div>
+                <div class="kpi-value">45</div>
+                <div class="kpi-label">Retail outlets (Seasons + Onyx)</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============== EGYPT TRACK RECORD ============== -->
+<section id="egypt">
+    <div class="container">
+        <div class="section-head reveal">
+            <div>
+                <span class="eyebrow">03 / Egypt portfolio</span>
+                <h2 class="serif" style="margin-top:16px;">Anchored in <em>New Cairo</em> and Smart Village.</h2>
+            </div>
+            <div class="lead">
+                <p>Egypt remains the Group's home market and the engine of recurring rental income. NAEEM Development holds the largest single-developer position inside Smart Village Cairo and has delivered two completed residential compounds on a combined 170,500 sqm of prime New Cairo land. The five core differentiators below define the franchise.</p>
+            </div>
+        </div>
+
+        <!-- Pillars -->
+        <div class="pillars reveal" style="margin-bottom: 100px;">
+            <div class="pillar">
+                <div class="pillar-num">01 / Establishment</div>
+                <h4>Subsidiary launched 2007</h4>
+                <p>NAEEM Development, the 68%-owned development arm, was established in 2007 and has executed continuously through multiple market cycles in Egypt.</p>
+            </div>
+            <div class="pillar">
+                <div class="pillar-num">02 / Delivery</div>
+                <h4>Timely handovers</h4>
+                <p>A consistent record of timely delivery on mixed-use and commercial projects inside Smart Village &mdash; a critical signal for institutional tenants.</p>
+            </div>
+            <div class="pillar">
+                <div class="pillar-num">03 / First mover</div>
+                <h4>Business park pioneer</h4>
+                <p>NAEEM was the first developer to introduce the modern "business park" concept inside Smart Village, shaping how commercial real estate is leased in West Cairo.</p>
+            </div>
+            <div class="pillar">
+                <div class="pillar-num">04 / Experience</div>
+                <h4>16 years of focus</h4>
+                <p>Sixteen continuous years operating in commercial real estate, with deep relationships across banking, education, technology and consulting tenants.</p>
+            </div>
+            <div class="pillar">
+                <div class="pillar-num">05 / Returns</div>
+                <h4>Highest ROI in market</h4>
+                <p>Internally benchmarked as delivering the highest return on investment among comparable peers in the Smart Village office-leasing segment.</p>
+            </div>
+        </div>
+
+        <!-- LA TERRA Project -->
+        <div class="project reveal">
+            <div class="project-text">
+                <div class="project-region">Egypt · Residential · Delivered</div>
+                <h3 class="serif">La Terra Compound</h3>
+                <p class="project-desc">A flagship gated villa community in New Cairo &mdash; the most prestigious residential corridor in Greater Cairo &mdash; combining standalone villas and townhouses across a 120,000 sqm masterplan with landscaped activity zones and central amenities.</p>
+                <div class="project-specs">
+                    <div class="spec"><div class="spec-num">127</div><div class="spec-label">Standalone villas</div></div>
+                    <div class="spec"><div class="spec-num">60</div><div class="spec-label">Townhouses</div></div>
+                    <div class="spec"><div class="spec-num">120K</div><div class="spec-label">sqm land area</div></div>
+                    <div class="spec"><div class="spec-num">100%</div><div class="spec-label">Delivered</div></div>
+                </div>
+            </div>
+            <div class="project-visual">
+                <span class="project-tag">New Cairo · Egypt</span>
+                <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&q=80" alt="La Terra Compound villa community">
+            </div>
+        </div>
+
+        <!-- MARVEL CITY -->
+        <div class="project reveal">
+            <div class="project-text">
+                <div class="project-region">Egypt · Mixed-use Residential · Delivered</div>
+                <h3 class="serif">Marvel City</h3>
+                <p class="project-desc">A mid-rise residential community in New Cairo combining 150 apartments with a curated 13,200 sqm retail spine. The masterplan integrates open-air landscaped courtyards, a central plaza and retail frontage &mdash; designed to function as a self-contained neighborhood rather than a standalone block.</p>
+                <div class="project-specs">
+                    <div class="spec"><div class="spec-num">150</div><div class="spec-label">Apartments</div></div>
+                    <div class="spec"><div class="spec-num">13.2K</div><div class="spec-label">sqm retail GLA</div></div>
+                    <div class="spec"><div class="spec-num">50.5K</div><div class="spec-label">sqm land area</div></div>
+                    <div class="spec"><div class="spec-num">100%</div><div class="spec-label">Delivered</div></div>
+                </div>
+            </div>
+            <div class="project-visual">
+                <span class="project-tag">New Cairo · Egypt</span>
+                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80" alt="Marvel City residential community">
+            </div>
+        </div>
+
+        <!-- Smart Village Office Portfolio -->
+        <div class="reveal" style="margin-top: 100px;">
+            <span class="eyebrow">Administrative portfolio</span>
+            <h3 class="serif" style="margin-top:16px; margin-bottom: 16px; font-size: 2rem;">Smart Village office assets &mdash; <em>Egypt's largest gated business community</em>.</h3>
+            <p style="max-width: 700px; color: var(--text-2); margin-bottom: 48px;">Eight operating Grade-A buildings totaling roughly 120,000 sqm of leasable office space, with five additional buildings under active development. The portfolio leases to a blue-chip tenant roster spanning banking, education, technology, advisory and retail.</p>
+
+            <div class="bar-chart-card">
+                <div class="bar-chart-title">
+                    <div>
+                        <h3 class="serif">Operating Buildings &mdash; Built-Up Area</h3>
+                        <p>Smart Village, West Cairo · sqm</p>
+                    </div>
+                    <span class="eyebrow" style="margin:0;">Live data</span>
+                </div>
+                <div class="bar-row reveal-bar">
+                    <div class="bar-label"><span class="name">F3-F4 &mdash; CIB &amp; EGBank</span><span class="value">12,140 <span>sqm</span></span></div>
+                    <div class="bar-track"><div class="bar-fill" data-fill="100"></div></div>
+                </div>
+                <div class="bar-row reveal-bar">
+                    <div class="bar-label"><span class="name">LINX &mdash; Pickup, Coretech, Habits</span><span class="value">12,000 <span>sqm</span></span></div>
+                    <div class="bar-track"><div class="bar-fill" data-fill="98.8"></div></div>
+                </div>
+                <div class="bar-row reveal-bar">
+                    <div class="bar-label"><span class="name">ARC &mdash; CHiNT, Delemar, izam</span><span class="value">12,000 <span>sqm</span></span></div>
+                    <div class="bar-track"><div class="bar-fill" data-fill="98.8"></div></div>
+                </div>
+                <div class="bar-row reveal-bar">
+                    <div class="bar-label"><span class="name">B16 &mdash; REACAP, SVREICO, AAIB</span><span class="value">8,000 <span>sqm</span></span></div>
+                    <div class="bar-track"><div class="bar-fill" data-fill="65.9"></div></div>
+                </div>
+                <div class="bar-row reveal-bar">
+                    <div class="bar-label"><span class="name">B143 &mdash; Faisal Bank, Attijariwafa, Fawry</span><span class="value">6,000 <span>sqm</span></span></div>
+                    <div class="bar-track"><div class="bar-fill" data-fill="49.4"></div></div>
+                </div>
+                <div class="bar-row reveal-bar">
+                    <div class="bar-label"><span class="name">Northside &mdash; Mavens, London Trade, Portrait</span><span class="value">6,000 <span>sqm</span></span></div>
+                    <div class="bar-track"><div class="bar-fill" data-fill="49.4"></div></div>
+                </div>
+                <div class="bar-row reveal-bar">
+                    <div class="bar-label"><span class="name">B109 &mdash; Kipling School</span><span class="value">4,000 <span>sqm</span></span></div>
+                    <div class="bar-track"><div class="bar-fill" data-fill="32.9"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Buildings detail accordion -->
+        <div style="margin-top: 80px;">
+            <span class="eyebrow">Building-by-building detail</span>
+            <h3 class="serif" style="margin-top:16px; margin-bottom: 32px; font-size: 1.8rem;">Tenant profile across the West Cairo portfolio.</h3>
+
+            <div class="accord">
+                <div class="accord-head" onclick="toggleAccord(this)">
+                    <div style="display:flex; gap:24px; align-items:center;">
+                        <span class="num">01</span>
+                        <h4>F3-F4 &mdash; 12,140 sqm</h4>
+                    </div>
+                    <div class="accord-toggle"></div>
+                </div>
+                <div class="accord-body"><div class="accord-body-inner">
+                    <p>Anchor banking tower hosting two major Egyptian financial institutions. CIB (Commercial International Bank) is Egypt's largest private-sector bank by total assets; EGBank is a long-standing universal commercial bank.</p>
+                    <ul><li>CIB &mdash; Commercial International Bank</li><li>EGBank &mdash; Universal commercial banking</li></ul>
+                </div></div>
+            </div>
+
+            <div class="accord">
+                <div class="accord-head" onclick="toggleAccord(this)">
+                    <div style="display:flex; gap:24px; align-items:center;">
+                        <span class="num">02</span>
+                        <h4>B16 &mdash; 8,000 sqm</h4>
+                    </div>
+                    <div class="accord-toggle"></div>
+                </div>
+                <div class="accord-body"><div class="accord-body-inner">
+                    <p>Financial services and asset management hub housing the NAEEM Holding for Investment group itself, alongside affiliated and external financial services tenants.</p>
+                    <ul>
+                        <li>REACAP &mdash; Real estate financial investments</li>
+                        <li>SVREICO &mdash; Real Estate Investments Co.</li>
+                        <li>NAEEM Holding for Investment &mdash; Asset management &amp; investment banking</li>
+                        <li>Arab African International Bank (AAIB)</li>
+                        <li>TEZ Tour &mdash; Travel services</li>
+                        <li>Azimut &mdash; Global asset management</li>
+                    </ul>
+                </div></div>
+            </div>
+
+            <div class="accord">
+                <div class="accord-head" onclick="toggleAccord(this)">
+                    <div style="display:flex; gap:24px; align-items:center;">
+                        <span class="num">03</span>
+                        <h4>B109 &mdash; 4,000 sqm</h4>
+                    </div>
+                    <div class="accord-toggle"></div>
+                </div>
+                <div class="accord-body"><div class="accord-body-inner">
+                    <p>Education-focused asset fully occupied by a single institutional tenant, providing long-duration lease income with strong tenant covenants.</p>
+                    <ul><li>Kipling School &mdash; International curriculum K-12 education</li></ul>
+                </div></div>
+            </div>
+
+            <div class="accord">
+                <div class="accord-head" onclick="toggleAccord(this)">
+                    <div style="display:flex; gap:24px; align-items:center;">
+                        <span class="num">04</span>
+                        <h4>B143 &mdash; 6,000 sqm</h4>
+                    </div>
+                    <div class="accord-toggle"></div>
+                </div>
+                <div class="accord-body"><div class="accord-body-inner">
+                    <p>Mixed banking, fintech and retail tenant mix anchored by a ground-floor F&amp;B and retail line.</p>
+                    <ul>
+                        <li>Faisal Islamic Bank of Egypt</li>
+                        <li>Attijariwafa Bank &mdash; Pan-African banking group</li>
+                        <li>La Poire &mdash; Patisserie and café</li>
+                        <li>Egypt Laptop &mdash; Technology retail</li>
+                        <li>Fawry &mdash; Egypt's leading digital payments platform</li>
+                        <li>Pickup &mdash; Logistics &amp; delivery</li>
+                    </ul>
+                </div></div>
+            </div>
+
+            <div class="accord">
+                <div class="accord-head" onclick="toggleAccord(this)">
+                    <div style="display:flex; gap:24px; align-items:center;">
+                        <span class="num">05</span>
+                        <h4>LINX &mdash; 12,000 sqm</h4>
+                    </div>
+                    <div class="accord-toggle"></div>
+                </div>
+                <div class="accord-body"><div class="accord-body-inner">
+                    <p>One of the more recently completed buildings in the portfolio, oriented around technology, lifestyle and F&amp;B tenants designed to serve the broader Smart Village daytime population.</p>
+                    <ul>
+                        <li>Pickup &mdash; Logistics platform HQ</li>
+                        <li>Habits &mdash; Lifestyle brand</li>
+                        <li>Tabali &mdash; Oriental bistro</li>
+                        <li>Coretech &mdash; Technology services</li>
+                        <li>Breadfast Coffee &mdash; Coffee &amp; bakery</li>
+                    </ul>
+                </div></div>
+            </div>
+
+            <div class="accord">
+                <div class="accord-head" onclick="toggleAccord(this)">
+                    <div style="display:flex; gap:24px; align-items:center;">
+                        <span class="num">06</span>
+                        <h4>ARC &mdash; 12,000 sqm</h4>
+                    </div>
+                    <div class="accord-toggle"></div>
+                </div>
+                <div class="accord-body"><div class="accord-body-inner">
+                    <p>Industrial and B2B-oriented building anchored by a leading global electrical-equipment manufacturer.</p>
+                    <ul>
+                        <li>CHiNT &mdash; Global electrical equipment</li>
+                        <li>Delemar &mdash; Aluminium profiles production</li>
+                        <li>izam &mdash; Business services</li>
+                    </ul>
+                </div></div>
+            </div>
+
+            <div class="accord">
+                <div class="accord-head" onclick="toggleAccord(this)">
+                    <div style="display:flex; gap:24px; align-items:center;">
+                        <span class="num">07</span>
+                        <h4>Northside &mdash; 6,000 sqm</h4>
+                    </div>
+                    <div class="accord-toggle"></div>
+                </div>
+                <div class="accord-body"><div class="accord-body-inner">
+                    <p>Professional services tenant mix &mdash; consulting, trading and creative agencies.</p>
+                    <ul>
+                        <li>Mavens Consulting &mdash; Management consulting</li>
+                        <li>London Trade &mdash; Commodity trading</li>
+                        <li>Portrait Advertising &mdash; Creative agency</li>
+                    </ul>
+                </div></div>
+            </div>
+        </div>
+
+        <!-- TENANT FAMILY -->
+        <div class="tenants reveal" style="margin-top: 80px;">
+            <div class="tenants-head">
+                <span class="eyebrow">Tenant family</span>
+                <h3 class="serif" style="margin-top:16px;">A blue-chip occupant base across the Smart Village portfolio.</h3>
+            </div>
+            <div class="tenants-grid">
+                <div class="tenant">CIB<span class="industry">Banking</span></div>
+                <div class="tenant">EGBank<span class="industry">Banking</span></div>
+                <div class="tenant">AAIB<span class="industry">Banking</span></div>
+                <div class="tenant">Faisal Islamic Bank<span class="industry">Banking</span></div>
+                <div class="tenant">Attijariwafa<span class="industry">Banking</span></div>
+                <div class="tenant">Fawry<span class="industry">Fintech</span></div>
+                <div class="tenant">Azimut<span class="industry">Asset Mgmt</span></div>
+                <div class="tenant">REACAP<span class="industry">RE Finance</span></div>
+                <div class="tenant">SVREICO<span class="industry">RE Investments</span></div>
+                <div class="tenant">CHiNT<span class="industry">Industrial</span></div>
+                <div class="tenant">Delemar<span class="industry">Manufacturing</span></div>
+                <div class="tenant">Kipling School<span class="industry">Education</span></div>
+                <div class="tenant">Mavens Consulting<span class="industry">Advisory</span></div>
+                <div class="tenant">Pickup<span class="industry">Logistics</span></div>
+                <div class="tenant">Coretech<span class="industry">Technology</span></div>
+                <div class="tenant">TEZ Tour<span class="industry">Travel</span></div>
+                <div class="tenant">La Poire<span class="industry">F&amp;B</span></div>
+                <div class="tenant">Breadfast Coffee<span class="industry">F&amp;B</span></div>
+                <div class="tenant">Tabali Bistro<span class="industry">F&amp;B</span></div>
+                <div class="tenant">Egypt Laptop<span class="industry">Retail</span></div>
+                <div class="tenant">London Trade<span class="industry">Trading</span></div>
+                <div class="tenant">Portrait<span class="industry">Advertising</span></div>
+                <div class="tenant">izam<span class="industry">Services</span></div>
+                <div class="tenant">Habits<span class="industry">Lifestyle</span></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ============== UAE TRACK RECORD ============== -->
+<section id="uae">
+    <div class="container">
+        <div class="section-head reveal">
+            <div>
+                <span class="eyebrow">04 / UAE portfolio</span>
+                <h2 class="serif" style="margin-top:16px;">Two Dubai landmarks &mdash; <em>residential</em> and <em>mixed-use</em>.</h2>
+            </div>
+            <div class="lead">
+                <p>The Group's UAE exposure is concentrated in two flagship Dubai developments &mdash; Seasons Community in Jumeirah Village and The Onyx tower on Sheikh Zayed Road. Combined, these assets contribute close to 1,260 keys and units, alongside a full mixed-use offer of hospitality, offices and retail in two of Dubai's most strategic corridors.</p>
+            </div>
+        </div>
+
+        <!-- SEASONS -->
+        <div class="project reveal">
+            <div class="project-text">
+                <div class="project-region">UAE · Dubai · Jumeirah Village · Residential</div>
+                <h3 class="serif">Seasons Community</h3>
+                <p class="project-desc">A master-planned residential village in the heart of new Dubai, ringed by Al Khail Road, Al Barsha and Emirates Road. The development combines a high apartment count with low-rise townhouses and a curated retail spine &mdash; positioned for the family-oriented expatriate segment that anchors Jumeirah Village Circle.</p>
+                <div class="project-specs">
+                    <div class="spec"><div class="spec-num">677</div><div class="spec-label">Apartments</div></div>
+                    <div class="spec"><div class="spec-num">83</div><div class="spec-label">Townhouses</div></div>
+                    <div class="spec"><div class="spec-num">13</div><div class="spec-label">Retail outlets</div></div>
+                    <div class="spec"><div class="spec-num">760</div><div class="spec-label">Total residences</div></div>
+                </div>
+            </div>
+            <div class="project-visual">
+                <span class="project-tag">Jumeirah Village · Dubai</span>
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80" alt="Seasons Community residential development in Dubai">
+            </div>
+        </div>
+
+        <!-- ONYX -->
+        <div class="project reveal">
+            <div class="project-text">
+                <div class="project-region">UAE · Dubai · Sheikh Zayed Road · Mixed-use</div>
+                <h3 class="serif">The Onyx</h3>
+                <p class="project-desc">A prestigious mixed-use tower complex standing tall on Sheikh Zayed Road, immediately adjacent to Emaar Business Park. The Onyx integrates a full residential offering with a 210-key hotel inventory, a deep office floorplate count and a retail base &mdash; offering residents and tenants a "live, work, aspire" environment on one of Dubai's most prominent arterials.</p>
+                <div class="project-specs">
+                    <div class="spec"><div class="spec-num">169</div><div class="spec-label">Apartments</div></div>
+                    <div class="spec"><div class="spec-num">210</div><div class="spec-label">Hotel guest rooms</div></div>
+                    <div class="spec"><div class="spec-num">297</div><div class="spec-label">Offices</div></div>
+                    <div class="spec"><div class="spec-num">32</div><div class="spec-label">Retail outlets</div></div>
+                </div>
+            </div>
+            <div class="project-visual">
+                <span class="project-tag">Sheikh Zayed Road · Dubai</span>
+                <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1200&q=80" alt="The Onyx mixed-use tower in Dubai">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============== COMPARISON TABLE ============== -->
+<section style="padding-top: 0;">
+    <div class="container">
+        <div class="section-head reveal">
+            <div>
+                <span class="eyebrow">05 / Comparative snapshot</span>
+                <h2 class="serif" style="margin-top:16px;">Cross-portfolio comparison.</h2>
+            </div>
+            <div class="lead">
+                <p>A side-by-side look at the Group's largest assets &mdash; residential and mixed-use &mdash; with key metrics standardized across the Egyptian and UAE portfolio for ease of comparison.</p>
+            </div>
+        </div>
+
+        <div class="compare reveal">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Country</th>
+                        <th>Type</th>
+                        <th>Units / Keys</th>
+                        <th>Land / BUA</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="name">La Terra Compound</td>
+                        <td>Egypt</td>
+                        <td>Residential</td>
+                        <td class="num">187</td>
+                        <td class="num">120,000 sqm</td>
+                        <td>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td class="name">Marvel City</td>
+                        <td>Egypt</td>
+                        <td>Mixed-use Residential</td>
+                        <td class="num">150 + 13,200 retail</td>
+                        <td class="num">50,484 sqm</td>
+                        <td>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td class="name">Smart Village Portfolio</td>
+                        <td>Egypt</td>
+                        <td>Commercial / Office</td>
+                        <td class="num">8 operating + 5 dev.</td>
+                        <td class="num">~120,000 sqm BUA</td>
+                        <td>Operating</td>
+                    </tr>
+                    <tr>
+                        <td class="name">V5 Business Hub</td>
+                        <td>Egypt</td>
+                        <td>Commercial / Mixed</td>
+                        <td class="num">Multi-building</td>
+                        <td class="num">60,000 sqm BUA</td>
+                        <td>Under development</td>
+                    </tr>
+                    <tr>
+                        <td class="name">Seasons Community</td>
+                        <td>UAE</td>
+                        <td>Residential</td>
+                        <td class="num">760 + 13 retail</td>
+                        <td class="num">&mdash;</td>
+                        <td>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td class="name">The Onyx</td>
+                        <td>UAE</td>
+                        <td>Mixed-use</td>
+                        <td class="num">169 + 210 keys + 297 off.</td>
+                        <td class="num">&mdash;</td>
+                        <td>Delivered</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ============== GALLERY ============== -->
+<section>
+    <div class="container">
+        <div class="section-head reveal">
+            <div>
+                <span class="eyebrow">06 / Visual portfolio</span>
+                <h2 class="serif" style="margin-top:16px;">Selected imagery.</h2>
+            </div>
+            <div class="lead">
+                <p>A curated visual cross-section of the Group's product categories &mdash; from premium villa compounds and mid-rise residential to Grade-A office product and the mixed-use V5 masterplan currently under development inside Smart Village Cairo.</p>
+            </div>
+        </div>
+
+        <div class="gallery reveal">
+            <div class="gallery-item large">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1400&q=80" alt="Modern office tower">
+                <div class="gallery-caption">
+                    <div class="meta">Smart Village · Cairo</div>
+                    <h5>Grade-A office product</h5>
+                </div>
+            </div>
+            <div class="gallery-item wide">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80" alt="Luxury villa exterior">
+                <div class="gallery-caption">
+                    <div class="meta">La Terra · New Cairo</div>
+                    <h5>Standalone villa typology</h5>
+                </div>
+            </div>
+            <div class="gallery-item medium">
+                <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=900&q=80" alt="Residential interior">
+                <div class="gallery-caption">
+                    <div class="meta">Marvel City</div>
+                    <h5>Apartment finishes</h5>
+                </div>
+            </div>
+            <div class="gallery-item medium">
+                <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=900&q=80" alt="Dubai skyline">
+                <div class="gallery-caption">
+                    <div class="meta">Sheikh Zayed Rd · Dubai</div>
+                    <h5>The Onyx context</h5>
+                </div>
+            </div>
+            <div class="gallery-item medium">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80" alt="Modern office interior">
+                <div class="gallery-caption">
+                    <div class="meta">Smart Village</div>
+                    <h5>Tenant fit-out standards</h5>
+                </div>
+            </div>
+            <div class="gallery-item wide">
+                <img src="https://images.unsplash.com/photo-1577415124269-fc1140a69e91?w=1200&q=80" alt="V5 architectural rendering">
+                <div class="gallery-caption">
+                    <div class="meta">V5 Business Hub</div>
+                    <h5>Masterplan rendering</h5>
+                </div>
+            </div>
+            <div class="gallery-item small">
+                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80" alt="Townhouse community">
+                <div class="gallery-caption">
+                    <div class="meta">Seasons Community</div>
+                    <h5>Townhouse blocks</h5>
+                </div>
+            </div>
+            <div class="gallery-item small">
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" alt="Modern residential">
+                <div class="gallery-caption">
+                    <div class="meta">New Cairo</div>
+                    <h5>Mid-rise residential</h5>
+                </div>
+            </div>
+            <div class="gallery-item small">
+                <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80" alt="Office building facade">
+                <div class="gallery-caption">
+                    <div class="meta">Northside · SVC</div>
+                    <h5>Curtain wall facade</h5>
+                </div>
+            </div>
+            <div class="gallery-item small">
+                <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?w=800&q=80" alt="Building lobby">
+                <div class="gallery-caption">
+                    <div class="meta">B16 · Smart Village</div>
+                    <h5>Tenant lobby</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============== V5 FEATURE PROJECT ============== -->
+<section class="v5-section" id="v5">
+    <div class="container">
+        <div class="section-head reveal">
+            <div>
+                <span class="eyebrow">07 / Flagship development</span>
+                <h2 class="serif" style="margin-top:16px;">V5 Business Hub.</h2>
+            </div>
+            <div class="lead">
+                <p>The single largest active development on the Group's books inside Smart Village Egypt &mdash; setting a new institutional benchmark for Grade-A business-park product in Cairo and consolidating NAEEM's first-mover position in the campus.</p>
+            </div>
+        </div>
+
+        <div class="v5-card reveal">
+            <div class="v5-hero-img">
+                <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1600&q=80" alt="V5 Business Hub modern office complex">
+            </div>
+            <div class="v5-content">
+                <div class="v5-tagline serif">"A space where innovation meets serenity."</div>
+                <h3 class="serif">The largest complex in Smart Village Egypt.</h3>
+                <p>V5 spans a 10,000 sqm land plot with a built-up area of 60,000 sqm &mdash; designed to seamlessly integrate with the lush greenery surrounding the campus, creating an environment where verdant landscapes inspire creativity and productivity for the tenants who occupy it. The development is masterplanned as a connected cluster of low-rise buildings linked by landscaped plazas, retail courtyards and pedestrian spines.</p>
+                <p style="color: var(--text-2); margin-bottom: 0;">As the largest single development inside Smart Village, V5 is positioned to anchor the next generation of corporate occupiers seeking premium office product within Egypt's largest gated business community.</p>
+
+                <div class="v5-amenities">
+                    <div class="amenity">
+                        <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="7" cy="16" r="1.5"/><circle cx="17" cy="16" r="1.5"/><path d="M5 11l2-6h10l2 6"/></svg></div>
+                        <div class="amenity-text">Parking control system</div>
+                    </div>
+                    <div class="amenity">
+                        <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2v6M12 22a6 6 0 0 0 0-12 6 6 0 0 0 0 12z"/></svg></div>
+                        <div class="amenity-text">Chilled water system</div>
+                    </div>
+                    <div class="amenity">
+                        <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                        <div class="amenity-text">24/7 security</div>
+                    </div>
+                    <div class="amenity">
+                        <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 7v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7"/><path d="M22 7L12 13 2 7"/><path d="M2 7l10-5 10 5"/></svg></div>
+                        <div class="amenity-text">Concierge service</div>
+                    </div>
+                    <div class="amenity">
+                        <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2C8 8 5 11 5 15a7 7 0 0 0 14 0c0-4-3-7-7-13z"/></svg></div>
+                        <div class="amenity-text">Central alarm system</div>
+                    </div>
+                    <div class="amenity">
+                        <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="2" width="16" height="20"/><path d="M8 6h8M8 18h8M12 10v4"/></svg></div>
+                        <div class="amenity-text">Lift lobbies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px;">
+            <div class="kpi reveal">
+                <div class="kpi-value">10K</div>
+                <div class="kpi-label">sqm land area</div>
+            </div>
+            <div class="kpi reveal">
+                <div class="kpi-value">60K</div>
+                <div class="kpi-label">sqm built-up area</div>
+            </div>
+            <div class="kpi reveal">
+                <div class="kpi-value">6x</div>
+                <div class="kpi-label">FAR / efficiency ratio</div>
+            </div>
+            <div class="kpi reveal">
+                <div class="kpi-value">#1</div>
+                <div class="kpi-label">Largest in Smart Village</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============== TIMELINE ============== -->
+<section id="timeline">
+    <div class="container">
+        <div class="section-head reveal">
+            <div>
+                <span class="eyebrow">08 / Chronology</span>
+                <h2 class="serif" style="margin-top:16px;">A <em>16-year</em> build-out.</h2>
+            </div>
+            <div class="lead">
+                <p>The major milestones in the Group's development since the launch of NAEEM Development in 2007 &mdash; tracking the geographic expansion from East Cairo residential into Smart Village commercial and ultimately into the UAE mixed-use market.</p>
+            </div>
+        </div>
+
+        <div class="timeline reveal">
+            <div class="tl-item">
+                <div class="tl-year">2007</div>
+                <h4>NAEEM Development established</h4>
+                <p>NAEEM Development is incorporated as the 68%-owned real estate development subsidiary of NAEEM Real Estate Holding, with an initial mandate focused on residential and commercial product in Greater Cairo.</p>
+            </div>
+            <div class="tl-item">
+                <div class="tl-year">Early phase</div>
+                <h4>First mover in Smart Village</h4>
+                <p>NAEEM becomes the first developer to introduce the modern "business park" concept inside Smart Village Cairo &mdash; positioning the platform as the campus's largest single developer and shaping the leasing template for Grade-A office product in West Cairo.</p>
+            </div>
+            <div class="tl-item">
+                <div class="tl-year">Residential</div>
+                <h4>La Terra Compound delivered</h4>
+                <p>Completion of a 120,000 sqm villa community in New Cairo featuring 127 villas and 60 townhouses &mdash; establishing the Group's premium residential credentials in the most prestigious area of Greater Cairo.</p>
+            </div>
+            <div class="tl-item">
+                <div class="tl-year">Residential</div>
+                <h4>Marvel City delivered</h4>
+                <p>Handover of a 50,484 sqm mixed residential and retail community delivering 150 apartments alongside 13,200 sqm of retail GLA, demonstrating the Group's ability to execute integrated residential-retail product.</p>
+            </div>
+            <div class="tl-item">
+                <div class="tl-year">UAE entry</div>
+                <h4>Seasons Community, Dubai</h4>
+                <p>Delivery of a 760-unit residential village in Jumeirah Village &mdash; the Group's first major UAE asset &mdash; combining 677 apartments, 83 townhouses and a 13-unit retail spine.</p>
+            </div>
+            <div class="tl-item">
+                <div class="tl-year">UAE expansion</div>
+                <h4>The Onyx, Sheikh Zayed Road</h4>
+                <p>Delivery of a flagship mixed-use tower complex adjacent to Emaar Business Park, integrating 169 apartments, 210 hotel keys, 297 offices and 32 retail outlets in a single development &mdash; the Group's largest single-asset undertaking in the UAE.</p>
+            </div>
+            <div class="tl-item">
+                <div class="tl-year">2024 — onwards</div>
+                <h4>V5 Business Hub under development</h4>
+                <p>Construction underway on the V5 Business Hub &mdash; the largest single complex in Smart Village Egypt at 60,000 sqm BUA on a 10,000 sqm plot &mdash; alongside five additional admin buildings in active development across the campus.</p>
+            </div>
+            <div class="tl-item">
+                <div class="tl-year">May 2026</div>
+                <h4>Current state</h4>
+                <p>Eight operating admin buildings (~120K sqm), five buildings under development, 1,266 delivered residential units between Egypt and the UAE, and an active pipeline anchored by V5 Business Hub.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============== OUTLOOK ============== -->
+<section id="outlook">
+    <div class="container">
+        <div class="section-head reveal">
+            <div>
+                <span class="eyebrow">09 / Outlook</span>
+                <h2 class="serif" style="margin-top:16px;">Where the platform is headed.</h2>
+            </div>
+            <div class="lead">
+                <p>Forward-looking themes that frame the Group's positioning over the next development cycle &mdash; calibrated against the maturing of Smart Village as an institutional office market, the depth of the Dubai mixed-use cycle, and the Group's expanding under-development pipeline.</p>
+            </div>
+        </div>
+
+        <div class="outlook-grid">
+            <div class="outlook-card reveal">
+                <div class="outlook-num">+5</div>
+                <h4 class="serif">New buildings in development</h4>
+                <p>Five additional administrative buildings are actively under construction inside Smart Village Cairo &mdash; expected to materially expand the Group's leasable office BUA beyond the current ~120,000 sqm operating base.</p>
+            </div>
+            <div class="outlook-card reveal">
+                <div class="outlook-num">60K</div>
+                <h4 class="serif">V5 BUA delivery</h4>
+                <p>The V5 Business Hub adds 60,000 sqm of premium business-park BUA in a single project &mdash; the largest complex on the Smart Village campus and a step-change for the Group's commercial portfolio.</p>
+            </div>
+            <div class="outlook-card reveal">
+                <div class="outlook-num">2x</div>
+                <h4 class="serif">Market footprint</h4>
+                <p>A dual-market positioning across Egypt and the UAE provides natural currency and cycle diversification &mdash; with Egyptian-pound rental income from Smart Village offset by AED-denominated income from the Dubai assets.</p>
+            </div>
+            <div class="outlook-card reveal">
+                <div class="outlook-num">#1</div>
+                <h4 class="serif">Smart Village position</h4>
+                <p>Status as the largest single developer inside Egypt's biggest gated business community provides a structural advantage &mdash; campus-level relationships with tenants and the operator that smaller developers cannot replicate.</p>
+            </div>
+            <div class="outlook-card reveal">
+                <div class="outlook-num">ROI</div>
+                <h4 class="serif">Return discipline</h4>
+                <p>Internally benchmarked at the top of the Smart Village peer set for return on investment &mdash; reflecting disciplined land acquisition, in-house development execution and an income-producing operating model.</p>
+            </div>
+            <div class="outlook-card reveal">
+                <div class="outlook-num">EGX</div>
+                <h4 class="serif">Listed transparency</h4>
+                <p>EGX-listing provides public reporting cadence and audited financials, supporting institutional investor diligence and accessibility of the security for cross-border allocators.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer id="contact">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3 class="serif">NAEEM Real Estate Holding Group</h3>
+                <p>An Egyptian Stock Exchange-listed real estate holding company developing, leasing and operating residential, commercial and mixed-use assets across Egypt and the United Arab Emirates.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Portfolio</h5>
+                <ul>
+                    <li><a href="#egypt">Egypt assets</a></li>
+                    <li><a href="#uae">UAE assets</a></li>
+                    <li><a href="#v5">V5 Business Hub</a></li>
+                    <li><a href="#portfolio">KPI snapshot</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Information</h5>
+                <ul>
+                    <li><a href="#about">About NAEEM</a></li>
+                    <li><a href="#timeline">Chronology</a></li>
+                    <li><a href="#outlook">Outlook</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Listing</h5>
+                <ul>
+                    <li>EGX-listed entity</li>
+                    <li>Headquartered: Cairo</li>
+                    <li>Subsidiary: NAEEM Development (68%)</li>
+                    <li>Established (sub.): 2007</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 NAEEM Real Estate Holding Group · Profile webpage rendered May 2026</p>
+            <p class="disclaimer">Source: NAEEM Real Estate Holding Group Company Profile (Confidential, May 2026). This webpage is an editorial presentation of publicly summarized portfolio information and is not investment, tax or legal advice. Prospective investors should consult their own advisors before making any investment decision.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+// ============== Mobile menu ==============
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+});
+// Close menu when a link is clicked
+navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => navLinks.classList.remove('open'));
+});
+
+// ============== Accordion ==============
+function toggleAccord(header) {
+    const accord = header.parentElement;
+    accord.classList.toggle('open');
+}
+
+// ============== Reveal on scroll ==============
+const reveals = document.querySelectorAll('.reveal');
+const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            revealObs.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+reveals.forEach(el => revealObs.observe(el));
+
+// ============== Bar chart fill on scroll ==============
+const barFills = document.querySelectorAll('.bar-fill');
+const barObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const bar = entry.target;
+            const fill = bar.getAttribute('data-fill');
+            setTimeout(() => {
+                bar.style.width = fill + '%';
+            }, 150);
+            barObs.unobserve(bar);
+        }
+    });
+}, { threshold: 0.3 });
+barFills.forEach(b => barObs.observe(b));
+
+// ============== Nav style on scroll ==============
+const nav = document.querySelector('.nav');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        nav.style.background = 'rgba(10, 10, 11, 0.92)';
+    } else {
+        nav.style.background = 'rgba(10, 10, 11, 0.7)';
+    }
+});
+</script>
+
+</body>
+</html>
